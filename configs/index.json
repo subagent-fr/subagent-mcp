@@ -1,0 +1,114 @@
+{
+  "adresse": "https://api.subagent.fr/mcp",
+  "variable": "SUBAGENT_KEY",
+  "configurations": [
+    {
+      "client": "Claude Code",
+      "fichier": "claude-code.sans-cle.json",
+      "destination": ".mcp.json, à la racine du projet",
+      "format": "json",
+      "racine": "mcpServers",
+      "cle": false,
+      "source": "https://code.claude.com/docs/en/mcp"
+    },
+    {
+      "client": "Claude Code",
+      "fichier": "claude-code.avec-cle.json",
+      "destination": ".mcp.json, à la racine du projet",
+      "format": "json",
+      "racine": "mcpServers",
+      "cle": true,
+      "source": "https://code.claude.com/docs/en/mcp"
+    },
+    {
+      "client": "Cursor",
+      "fichier": "cursor.sans-cle.json",
+      "destination": ".cursor/mcp.json (projet) ou ~/.cursor/mcp.json (tous les projets)",
+      "format": "json",
+      "racine": "mcpServers",
+      "cle": false,
+      "source": "https://cursor.com/docs/mcp"
+    },
+    {
+      "client": "Cursor",
+      "fichier": "cursor.avec-cle.json",
+      "destination": ".cursor/mcp.json (projet) ou ~/.cursor/mcp.json (tous les projets)",
+      "format": "json",
+      "racine": "mcpServers",
+      "cle": true,
+      "source": "https://cursor.com/docs/mcp"
+    },
+    {
+      "client": "VS Code (GitHub Copilot)",
+      "fichier": "vscode.sans-cle.json",
+      "destination": ".vscode/mcp.json",
+      "format": "json",
+      "racine": "servers",
+      "cle": false,
+      "source": "https://code.visualstudio.com/docs/agents/reference/mcp-configuration"
+    },
+    {
+      "client": "VS Code (GitHub Copilot)",
+      "fichier": "vscode.avec-cle.json",
+      "destination": ".vscode/mcp.json",
+      "format": "json",
+      "racine": "servers",
+      "cle": true,
+      "source": "https://code.visualstudio.com/docs/agents/reference/mcp-configuration"
+    },
+    {
+      "client": "Codex",
+      "fichier": "codex.sans-cle.toml",
+      "destination": "~/.codex/config.toml",
+      "format": "toml",
+      "racine": null,
+      "cle": false,
+      "source": "https://learn.chatgpt.com/docs/extend/mcp"
+    },
+    {
+      "client": "Codex",
+      "fichier": "codex.avec-cle.toml",
+      "destination": "~/.codex/config.toml",
+      "format": "toml",
+      "racine": null,
+      "cle": true,
+      "source": "https://learn.chatgpt.com/docs/extend/mcp"
+    },
+    {
+      "client": "Gemini CLI",
+      "fichier": "gemini-cli.sans-cle.json",
+      "destination": ".gemini/settings.json (projet) ou ~/.gemini/settings.json",
+      "format": "json",
+      "racine": "mcpServers",
+      "cle": false,
+      "source": "https://geminicli.com/docs/tools/mcp-server/"
+    },
+    {
+      "client": "Gemini CLI",
+      "fichier": "gemini-cli.avec-cle.json",
+      "destination": ".gemini/settings.json (projet) ou ~/.gemini/settings.json",
+      "format": "json",
+      "racine": "mcpServers",
+      "cle": true,
+      "source": "https://geminicli.com/docs/tools/mcp-server/"
+    },
+    {
+      "client": "Devin Desktop (anciennement Windsurf)",
+      "fichier": "devin-desktop.sans-cle.json",
+      "destination": "~/.config/devin/mcp_config.json (sous Windows : %APPDATA%\\devin\\mcp_config.json)",
+      "format": "json",
+      "racine": "mcpServers",
+      "cle": false,
+      "source": "https://docs.devin.ai/desktop/cascade/mcp"
+    },
+    {
+      "client": "Devin Desktop (anciennement Windsurf)",
+      "fichier": "devin-desktop.avec-cle.json",
+      "destination": "~/.config/devin/mcp_config.json (sous Windows : %APPDATA%\\devin\\mcp_config.json)",
+      "format": "json",
+      "racine": "mcpServers",
+      "cle": true,
+      "source": "https://docs.devin.ai/desktop/cascade/mcp"
+    }
+  ]
+}

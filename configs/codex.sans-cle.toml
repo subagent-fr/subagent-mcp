@@ -1,0 +1,2 @@
+[mcp_servers.subagent]
+url = "https://api.subagent.fr/mcp"

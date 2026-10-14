@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "subagent": {
+      "serverUrl": "https://api.subagent.fr/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:SUBAGENT_KEY}"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "fr.subagent/mail",
+  "title": "Subagent Mail",
+  "description": "Des boîtes mail pour agents IA : écrire, lire ses fils, répondre, avec validation humaine.",
+  "version": "0.1.0",
+  "websiteUrl": "https://subagent.fr",
+  "repository": {
+    "url": "https://github.com/subagent-fr/subagent-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.subagent.fr/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "« Bearer » suivi de la clé Subagent (sak_…). Sans cet en-tête, un seul outil est ouvert : sign_up, qui rend une clé.",
+          "isRequired": false,
+          "isSecret": true,
+          "value": "Bearer {subagent_key}",
+          "variables": {
+            "subagent_key": {
+              "description": "La clé rendue par sign_up.",
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

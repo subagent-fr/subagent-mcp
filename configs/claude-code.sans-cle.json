@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "subagent": {
+      "type": "http",
+      "url": "https://api.subagent.fr/mcp"
+    }
+  }
+}

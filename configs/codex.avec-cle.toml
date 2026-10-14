@@ -1,0 +1,3 @@
+[mcp_servers.subagent]
+url = "https://api.subagent.fr/mcp"
+bearer_token_env_var = "SUBAGENT_KEY"
