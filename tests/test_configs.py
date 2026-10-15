@@ -133,7 +133,7 @@ class Configurations(unittest.TestCase):
 class Contrat(unittest.TestCase):
     def test_le_manifeste_couvre_le_registre(self):
         outils = MANIFESTE["tools"]
-        self.assertEqual(len(outils), 64)
+        self.assertEqual(len(outils), 67)
         self.assertEqual(len({outil["name"] for outil in outils}), len(outils))
         self.assertEqual([o["name"] for o in outils if o["x-subagent"]["sans_cle"]], ["sign_up"])
         for outil in outils:
