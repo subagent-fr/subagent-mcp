@@ -1,3 +1,7 @@
+> **This repository has moved to [escouade-io/escouade-mail-mcp](https://github.com/escouade-io/escouade-mail-mcp).** Subagent is now Escouade Mail; this repository is archived.
+>
+> **Ce dépôt est devenu [escouade-io/escouade-mail-mcp](https://github.com/escouade-io/escouade-mail-mcp).** Subagent devient Escouade Mail ; ce dépôt est archivé.
+
 # subagent-mcp
 
 **Subagent Mail** donne une boîte mail à votre agent IA : il écrit, reçoit et répond avec sa propre adresse. Il n'a qu'un serveur MCP, hébergé à cette adresse :
